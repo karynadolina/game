@@ -1,0 +1,157 @@
+.container {
+  background: transparent;
+  padding: 0;
+  width: 100%;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+    height: 40px;
+}
+
+.stripeLeft,
+.stripeRight {
+  flex: 1;
+  height: 1px;
+  background: #D5D5D5;
+}
+
+.hexagon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  background: #D5D5D5;
+  clip-path: polygon(
+    0 50%,
+    8px 0,
+    calc(100% - 8px) 0,
+    100% 50%,
+    calc(100% - 8px) 100%,
+    8px 100%
+  );
+  min-width: 240px;
+}
+
+.hexagon::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: var(--color-white);
+  clip-path: polygon(
+    0 50%,
+    8px 0,
+    calc(100% - 8px) 0,
+    100% 50%,
+    calc(100% - 8px) 100%,
+    8px 100%
+  );
+  z-index: 0;
+}
+
+.amount {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+/* Current level - orange */
+.current .stripeLeft,
+.current .stripeRight {
+  background: var(--color-primary);
+}
+
+.current .hexagon {
+  background: var(--color-primary);
+}
+
+.current .hexagon::before {
+  background: var(--color-white);
+}
+
+.current .amount {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Passed levels - gray */
+.passed .stripeLeft,
+.passed .stripeRight {
+  background: #E0E0E0;
+}
+
+.passed .hexagon {
+  background: #E0E0E0;
+}
+
+.passed .hexagon::before {
+  background: var(--color-white);
+}
+
+.passed .amount {
+  color: #BDBDBD;
+}
+
+@media (max-width: 768px) {
+  .list {
+    gap: 3px;
+  }
+
+  .hexagon {
+    padding: 6px 20px;
+    min-width: 90px;
+  }
+
+  .amount {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .list {
+    gap: 6px;
+  }
+
+  .hexagon {
+    padding: 10px 32px;
+    min-width: 140px;
+    clip-path: polygon(
+      0 50%,
+      12px 0,
+      calc(100% - 12px) 0,
+      100% 50%,
+      calc(100% - 12px) 100%,
+      12px 100%
+    );
+  }
+
+  .hexagon::before {
+    clip-path: polygon(
+      0 50%,
+      12px 0,
+      calc(100% - 12px) 0,
+      100% 50%,
+      calc(100% - 12px) 100%,
+      12px 100%
+    );
+  }
+
+  .amount {
+    font-size: var(--font-size-md);
+  }
+}

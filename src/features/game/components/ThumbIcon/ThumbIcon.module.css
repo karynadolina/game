@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 624px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 320px;
+  }
+}
+
+@media (max-width: 375px) {
+  .icon {
+    width: 288px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .icon {
+    width: 624px;
+  }
+}

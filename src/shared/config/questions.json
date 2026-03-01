@@ -1,0 +1,150 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "text": "What is the capital of France?",
+      "answers": [
+        { "id": "q1a1", "text": "London", "isCorrect": false },
+        { "id": "q1a2", "text": "Berlin", "isCorrect": false },
+        { "id": "q1a3", "text": "Paris", "isCorrect": true },
+        { "id": "q1a4", "text": "Madrid", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q2",
+      "text": "Which planet is known as the Red Planet?",
+      "answers": [
+        { "id": "q2a1", "text": "Venus", "isCorrect": false },
+        { "id": "q2a2", "text": "Mars", "isCorrect": true },
+        { "id": "q2a3", "text": "Jupiter", "isCorrect": false },
+        { "id": "q2a4", "text": "Saturn", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q3",
+      "text": "What is the chemical symbol for gold?",
+      "answers": [
+        { "id": "q3a1", "text": "Go", "isCorrect": false },
+        { "id": "q3a2", "text": "Gd", "isCorrect": false },
+        { "id": "q3a3", "text": "Au", "isCorrect": true },
+        { "id": "q3a4", "text": "Ag", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q4",
+      "text": "Who wrote 'Romeo and Juliet'?",
+      "answers": [
+        { "id": "q4a1", "text": "Charles Dickens", "isCorrect": false },
+        { "id": "q4a2", "text": "William Shakespeare", "isCorrect": true },
+        { "id": "q4a3", "text": "Jane Austen", "isCorrect": false },
+        { "id": "q4a4", "text": "Mark Twain", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q5",
+      "text": "What is the largest ocean on Earth?",
+      "answers": [
+        { "id": "q5a1", "text": "Atlantic Ocean", "isCorrect": false },
+        { "id": "q5a2", "text": "Indian Ocean", "isCorrect": false },
+        { "id": "q5a3", "text": "Arctic Ocean", "isCorrect": false },
+        { "id": "q5a4", "text": "Pacific Ocean", "isCorrect": true }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q6",
+      "text": "In what year did World War II end?",
+      "answers": [
+        { "id": "q6a1", "text": "1943", "isCorrect": false },
+        { "id": "q6a2", "text": "1944", "isCorrect": false },
+        { "id": "q6a3", "text": "1945", "isCorrect": true },
+        { "id": "q6a4", "text": "1946", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q7",
+      "text": "What is the smallest prime number?",
+      "answers": [
+        { "id": "q7a1", "text": "0", "isCorrect": false },
+        { "id": "q7a2", "text": "1", "isCorrect": false },
+        { "id": "q7a3", "text": "2", "isCorrect": true },
+        { "id": "q7a4", "text": "3", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q8",
+      "text": "Which element has the atomic number 1?",
+      "answers": [
+        { "id": "q8a1", "text": "Helium", "isCorrect": false },
+        { "id": "q8a2", "text": "Hydrogen", "isCorrect": true },
+        { "id": "q8a3", "text": "Lithium", "isCorrect": false },
+        { "id": "q8a4", "text": "Carbon", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q9",
+      "text": "Who painted the Mona Lisa?",
+      "answers": [
+        { "id": "q9a1", "text": "Vincent van Gogh", "isCorrect": false },
+        { "id": "q9a2", "text": "Pablo Picasso", "isCorrect": false },
+        { "id": "q9a3", "text": "Leonardo da Vinci", "isCorrect": true },
+        { "id": "q9a4", "text": "Michelangelo", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q10",
+      "text": "What is the speed of light in vacuum (approximately)?",
+      "answers": [
+        { "id": "q10a1", "text": "300,000 km/s", "isCorrect": true },
+        { "id": "q10a2", "text": "150,000 km/s", "isCorrect": false },
+        { "id": "q10a3", "text": "500,000 km/s", "isCorrect": false },
+        { "id": "q10a4", "text": "1,000,000 km/s", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q11",
+      "text": "Which country has the largest population?",
+      "answers": [
+        { "id": "q11a1", "text": "United States", "isCorrect": false },
+        { "id": "q11a2", "text": "India", "isCorrect": true },
+        { "id": "q11a3", "text": "China", "isCorrect": false },
+        { "id": "q11a4", "text": "Indonesia", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    },
+    {
+      "id": "q12",
+      "text": "What is the hardest natural substance on Earth?",
+      "answers": [
+        { "id": "q12a1", "text": "Gold", "isCorrect": false },
+        { "id": "q12a2", "text": "Iron", "isCorrect": false },
+        { "id": "q12a3", "text": "Diamond", "isCorrect": true },
+        { "id": "q12a4", "text": "Platinum", "isCorrect": false }
+      ],
+      "timeLimit": 30
+    }
+  ],
+  "prizeLevels": [
+    { "questionIndex": 0, "amount": 500, "isMilestone": false },
+    { "questionIndex": 1, "amount": 1000, "isMilestone": false },
+    { "questionIndex": 2, "amount": 2000, "isMilestone": false },
+    { "questionIndex": 3, "amount": 4000, "isMilestone": false },
+    { "questionIndex": 4, "amount": 8000, "isMilestone": true },
+    { "questionIndex": 5, "amount": 16000, "isMilestone": false },
+    { "questionIndex": 6, "amount": 32000, "isMilestone": false },
+    { "questionIndex": 7, "amount": 64000, "isMilestone": false },
+    { "questionIndex": 8, "amount": 125000, "isMilestone": false },
+    { "questionIndex": 9, "amount": 250000, "isMilestone": true },
+    { "questionIndex": 10, "amount": 500000, "isMilestone": false },
+    { "questionIndex": 11, "amount": 1000000, "isMilestone": true }
+  ]
+}

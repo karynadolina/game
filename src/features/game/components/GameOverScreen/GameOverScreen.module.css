@@ -1,0 +1,148 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-neutral);
+  padding: var(--spacing-2xl);
+  overflow: hidden;
+}
+
+.buttonWrapper {
+  max-width: 400px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.iconWrapper {
+  flex-shrink: 0;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  max-width: 400px;
+}
+
+.label {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.score {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-md);
+}
+
+.congratulations {
+  font-size: var(--font-size-md);
+  color: var(--color-success);
+  margin: 0 0 var(--spacing-md);
+  font-weight: var(--font-weight-medium);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    text-align: center;
+    flex: 1;
+  }
+
+  .textContent {
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .score {
+    font-size: 36px;
+  }
+
+  .label {
+    font-size: var(--font-size-md);
+  }
+
+  .buttonWrapper {
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .score {
+    font-size: var(--font-size-xl);
+  }
+
+  .content {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .content {
+    max-width: 1400px;
+    gap: 120px;
+  }
+
+  .score {
+    font-size: 64px;
+  }
+
+  .label {
+    font-size: var(--font-size-xl);
+  }
+
+  .iconWrapper {
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        padding-top: 60px;
+        justify-content: flex-start;
+    }
+
+    .content {
+        flex-direction: column;
+        flex: 1;
+        text-align: center;
+    }
+
+    .textContent {
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        flex: 1;
+    }
+
+    .buttonWrapper {
+        margin-top: auto;
+        padding: 20px 0;
+        width: 100%;
+        max-width: none;
+    }
+}
